@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "riskcraft"
+version = "0.1.0"
+description = "Build strong investment portfolios - quantiative financial modeling."
+authors = ["gordonkoehn <gordon@koehn.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+ruff = "^0.2.1"
+black = "^24.2.0"
+pytest-cov = "^4.1.0"
+pytest-xdist = "^3.5.0"
+pre-commit = "^3.6.1"
+interrogate = "^1.5.0"
+pyright = "^1.1.350"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
