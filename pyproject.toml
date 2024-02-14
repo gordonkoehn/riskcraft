@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Build strong investment portfolios - quantiative financial modeling."
 authors = ["gordonkoehn <gordon@koehn.net>"]
 readme = "README.md"
+packages = [{include = "pyggdrasil", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -18,6 +19,38 @@ pytest-xdist = "^3.5.0"
 pre-commit = "^3.6.1"
 interrogate = "^1.5.0"
 pyright = "^1.1.350"
+mkdocs-material = "^9.1.6"
+mkdocstrings = {extras = ["python"], version = "^0.21.2"}
+mkdocs-gen-files = "^0.4.0"
+mkdocs-literate-nav = "^0.6.0"
+
+[tool.coverage.report]
+fail_under = 85.0
+
+[tool.interrogate]
+ignore-init-method = false
+ignore-init-module = false
+ignore-magic = true
+ignore-semiprivate = true
+ignore-private = true
+ignore-property-decorators = false
+ignore-module = false
+fail-under = 95
+exclude = ["setup.py", "docs", "build"]
+ignore-regex = ["^get$", "^mock_.*", ".*BaseClass.*"]
+verbose = 2
+quiet = false
+whitelist-regex = []
+color = true
+
+[tool.pyright]
+include = ["src"]
+exclude = ["**/node_modules",
+    "**/__pycache__",
+    "src/experimental",
+    "src/typestubs"
+]
+
 
 [build-system]
 requires = ["poetry-core"]
