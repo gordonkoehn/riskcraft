@@ -1,0 +1,12 @@
+name: riskcraft
+# Conda/Mamba environment file,
+# to be used when running the snakemake pipeline, 
+# see workflow/README.md
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.4
+  - snakemake=7.25.0=hdfd78af_0
+  - poetry=1.4.2

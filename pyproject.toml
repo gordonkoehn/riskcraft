@@ -4,10 +4,11 @@ version = "0.1.0"
 description = "Build strong investment portfolios - quantiative financial modeling."
 authors = ["gordonkoehn <gordon@koehn.net>"]
 readme = "README.md"
-packages = [{include = "pyggdrasil", from = "src"}]
+packages = [{include = "riskcraft", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "3.10.4"
+ocean-lib = "^3.1.2"
 
 
 [tool.poetry.group.dev.dependencies]
