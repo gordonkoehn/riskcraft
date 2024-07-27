@@ -1,4 +1,5 @@
 """Test the ocean module."""
+
 from riskcraft.ocean import foo
 
 
