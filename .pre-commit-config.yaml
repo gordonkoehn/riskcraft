@@ -28,3 +28,8 @@ repos:
         language: node
         pass_filenames: true
         types: [python]
+  -   repo: https://github.com/CoinAlpha/git-hooks
+      rev: 78f0683233a09c68a072fd52740d32c0376d4f0f
+      hooks:
+      -   id: detect-wallet-private-key
+          types: [file]
