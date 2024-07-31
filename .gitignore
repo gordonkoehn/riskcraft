@@ -164,3 +164,7 @@ cython_debug/
 
 # Poetry Local Setup
 poetry.lock
+
+
+# Ignore all .env files
+.env.json

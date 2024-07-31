@@ -1,6 +1,6 @@
 """Test the ocean module."""
 
-from riskcraft.ocean import foo
+from riskcraft.account_creation import foo
 
 
 ## Test the foo function
