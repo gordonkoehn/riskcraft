@@ -6,8 +6,6 @@
 import json
 from eth_account.account import Account
 
-env = json.load(open(".env.json"))
-
 
 # TODO: remove this test function
 def foo(x: int, y: int) -> int:
@@ -19,6 +17,8 @@ def foo(x: int, y: int) -> int:
 def main():
     """Main function."""
     print(foo(1, 2))
+
+    env = json.load(open(".env.json"))
 
     print(env.get("INFURA_NODE_ENDPOINT"))
 
